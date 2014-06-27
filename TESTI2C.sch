@@ -2270,6 +2270,100 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="freetronics-master-v1">
+<packages>
+<package name="BUZZER-12X12-SMT">
+<wire x1="-6" y1="6" x2="-6" y2="-6" width="0.127" layer="21"/>
+<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="21"/>
+<wire x1="6" y1="-6" x2="6" y2="6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="-6" y2="6" width="0.127" layer="21"/>
+<wire x1="-6" y1="6" x2="-6" y2="-6" width="0.127" layer="51"/>
+<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="51"/>
+<wire x1="6" y1="-6" x2="6" y2="6" width="0.127" layer="51"/>
+<wire x1="6" y1="6" x2="-6" y2="6" width="0.127" layer="51"/>
+<circle x="4.6" y="-4.6" radius="0.5" width="1" layer="21"/>
+<circle x="6.9" y="-4.6" radius="0.3" width="0.7" layer="21"/>
+<smd name="1" x="-6" y="0" dx="3" dy="6" layer="1"/>
+<smd name="2" x="6" y="0" dx="3" dy="6" layer="1"/>
+<text x="-2.3" y="3.5" size="1.27" layer="51">PORT</text>
+<rectangle x1="-6" y1="-2" x2="-5" y2="2" layer="51"/>
+<rectangle x1="5" y1="-2" x2="6" y2="2" layer="51"/>
+<rectangle x1="-1" y1="5" x2="1" y2="6" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BUZZER">
+<wire x1="-1.27" y1="1.905" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="3.175" x2="0.635" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="1.905" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="3.175" x2="0.635" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="5.715" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.715" y1="3.81" x2="5.715" y2="4.445" width="0.254" layer="94"/>
+<wire x1="5.715" y1="4.445" x2="-3.175" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="4.445" x2="-3.175" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="6.35" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BUZZER" prefix="SG">
+<description>&lt;b&gt;Buzzer - Piezo Transducer&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="BUZZER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD12X12" package="BUZZER-12X12-SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2302,6 +2396,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP1" library="freetronics-master-v1.1" deviceset="M04" device="PTH" value="MODULE"/>
 <part name="LED4" library="freetronics-jon" deviceset="LED" device="0603" value="BLUE"/>
 <part name="R5" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K5 0603"/>
+<part name="PIEZO" library="freetronics-master-v1" deviceset="BUZZER" device="SMD12X12"/>
+<part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2350,6 +2446,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="JP1" gate="G$1" x="129.54" y="111.76" rot="R270"/>
 <instance part="LED4" gate="G$1" x="43.18" y="142.24"/>
 <instance part="R5" gate="G$1" x="43.18" y="121.92" rot="R90"/>
+<instance part="PIEZO" gate="G$1" x="160.02" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="154.94" y="165.1" size="1.778" layer="95"/>
+</instance>
+<instance part="GND3" gate="1" x="165.1" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -2468,6 +2568,12 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="127" y1="106.68" x2="127" y2="35.56" width="0.1524" layer="91"/>
 <junction x="127" y="35.56"/>
 </segment>
+<segment>
+<wire x1="165.1" y1="154.94" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="157.48" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="PIEZO" gate="G$1" pin="1"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -2541,6 +2647,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="210.82" y="81.28" size="1.778" layer="95"/>
 <pinref part="SL3" gate="G$1" pin="2"/>
 <pinref part="J3" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<wire x1="180.34" y1="160.02" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="PIEZO" gate="G$1" pin="2"/>
+<label x="167.64" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D8" class="0">
