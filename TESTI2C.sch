@@ -2387,15 +2387,15 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="LED1" library="freetronics-jon" deviceset="LED" device="0603" value="GREEN PASS"/>
 <part name="LED2" library="freetronics-jon" deviceset="LED" device="0603" value="YELLOW TEST"/>
 <part name="LED3" library="freetronics-jon" deviceset="LED" device="0603" value="RED FAIL"/>
-<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="560R 0603"/>
-<part name="R2" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="560R 0603"/>
-<part name="R3" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="560R 0603"/>
+<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="560R"/>
+<part name="R2" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="560R"/>
+<part name="R3" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="560R"/>
 <part name="GND2" library="freetronics" deviceset="GND" device=""/>
 <part name="S2" library="freetronics" deviceset="TAC_SWITCH" device="PTH" value="START"/>
-<part name="R4" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K 0603"/>
+<part name="R4" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="JP1" library="freetronics-master-v1.1" deviceset="M04" device="PTH" value="MODULE"/>
 <part name="LED4" library="freetronics-jon" deviceset="LED" device="0603" value="BLUE"/>
-<part name="R5" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K5 0603"/>
+<part name="R5" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="1K5"/>
 <part name="PIEZO" library="freetronics-master-v1" deviceset="BUZZER" device="SMD12X12"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 </parts>
